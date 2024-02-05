@@ -19,10 +19,11 @@ function App() {
     };
     fetchData();
   }, []);
-  return <div>
-    {isLoading? <p>Loading....</p> : <img src={data} alt="A Random Dog"/>}
-
-    </div>;
+  return (
+    <div>
+      {isLoading ? <p>Loading....</p> : <img src={data} alt="A Random Dog" />}
+    </div>
+  );
 }
 
 export default App;
